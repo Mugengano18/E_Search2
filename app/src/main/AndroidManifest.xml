@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android1.shoplarity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".models.Searchcountry" android:label="Search"></activity>
+        <activity android:name=".models.Singleinfo" />
+        <activity
+            android:name=".models.SignUpActivity"
+            android:label="signup" />
+        <activity
+            android:name=".models.LoginActivity"
+            android:label="login" />
+        <activity android:name=".models.childrenList" />
+        <activity android:name=".models.MenList" />
+        <activity android:name=".models.womenList" />
+        <activity
+            android:name=".models.AntiquityActivity"
+            android:label="Antiquity stores">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android1.shoplarity.models.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".models.mobilephoneactivity"
+            android:label="phone stores">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android1.shoplarity.models.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".models.furnitureActivity"
+            android:label="furniture stores">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android1.shoplarity.models.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".models.carsActivity"
+            android:label="Cars stores">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android1.shoplarity.models.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".models.ShoesActivity"
+            android:label="shoe stores">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android1.shoplarity.models.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".models.ClothesActivity"
+            android:label="Clothes">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android1.shoplarity.models.HomeActivity" />
+        </activity>
+        <activity android:name=".models.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android1.shoplarity.models.MainActivity" />
+        </activity>
+        <activity
+            android:name=".models.MainActivity"
+            android:theme="@style/NoActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
